@@ -1,0 +1,10 @@
+<mat-list>
+    <h2 mat-subheader>Posts List</h2>
+    <mat-list-item *ngFor="let post of (postagens$ | async)">
+      <mat-icon mat-list-icon>edit</mat-icon>
+      <h4 mat-line>UserId: {{post.userId}}</h4>
+      <h4 mat-line>ID: {{post.id}}</h4>
+      <h4 mat-line>Title: {{post.title}}</h4>
+      <h4 mat-line>Body: {{post.body}}</h4>
+    </mat-list-item>
+</mat-list>

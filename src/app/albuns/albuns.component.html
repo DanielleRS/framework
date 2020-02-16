@@ -1,0 +1,9 @@
+<mat-nav-list>
+    <h2 mat-subheader>Albums list</h2>
+    <a mat-list-item *ngFor="let a of (albuns$ | async)">
+        <mat-icon mat-list-icon>collections</mat-icon>
+        <h4 mat-line>UserId: {{ a.userId }}</h4>
+        <h4 mat-line>ID: {{ a.id }}</h4>
+        <h4 mat-line>Title: {{ a.title }}</h4>
+    </a>
+</mat-nav-list>

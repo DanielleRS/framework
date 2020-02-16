@@ -1,0 +1,10 @@
+<mat-list>
+    <h2 mat-subheader>TO-DOs List</h2>
+    <mat-list-item *ngFor="let todos of (todos$ | async)">
+      <mat-icon mat-list-icon>format_list_numbered</mat-icon>
+      <h4 mat-line>UserId: {{todos.userId}}</h4>
+      <h4 mat-line>ID: {{todos.id}}</h4>
+      <h4 mat-line>Title: {{todos.title}}</h4>
+      <h4 mat-line>Completed: {{todos.completed}}</h4>
+    </mat-list-item>
+</mat-list>
